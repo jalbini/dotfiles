@@ -24,3 +24,7 @@ export LANG="en_US"
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
+
+# add tab completion for git
+# via https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+source ~/.git-completion.bash
