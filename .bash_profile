@@ -28,3 +28,11 @@ complete -W "NSGlobalDomain" defaults
 # add tab completion for git
 # via https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/.git-completion.bash
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
